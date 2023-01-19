@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "random_pet" "server" {
-  length = 3
+  length = 2
   keepers = {
     # Generate a new pet name each time we switch to a new AMI id
     ami_id = data.aws_ami.ubuntu.id
