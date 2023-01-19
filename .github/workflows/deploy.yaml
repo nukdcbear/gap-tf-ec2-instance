@@ -24,7 +24,7 @@ jobs:
       - name: Configure AWS credentials from RandD account
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ secrets.AWS_ARN }}
+          role-to-assume: arn:aws:iam::035769497034:role/GitHub-terraform-module-aws-eks
           aws-region: us-east-2
 
       - name: Setup Terraform
