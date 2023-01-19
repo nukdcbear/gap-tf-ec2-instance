@@ -117,7 +117,7 @@ jobs:
   terraform-apply-qa:
     name: Apply terraform infrastructure code to QA environment`
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-    runs-on: ubuntu-latest`
+    runs-on: ubuntu-latest
     needs: terraform-validate
     permissions:
       id-token: write
