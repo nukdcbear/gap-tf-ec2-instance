@@ -4,14 +4,14 @@ on:
     paths-ignore:
       - .gitignore
       - README.md
-      - '.github/**'
+      - ".github/**"
   pull_request:
     branches:
       - main
     paths-ignore:
       - .gitignore
       - README.md
-      - '.github/**'
+      - ".github/**"
 
 permissions:
   contents: write
@@ -145,7 +145,7 @@ jobs:
 
   terraform-apply-prod:
     name: Apply terraform infrastructure code to Prod environment`
-    runs-on: ubuntu-latest`
+    runs-on: ubuntu-latest
     needs: terraform-apply-qa
     permissions:
       id-token: write
